@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 My Music Player</h1>
+            <p>Recherchez et écoutez votre musique préférée via iTunes</p>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Rechercher des chansons, artistes ou albums..."
+                    id="searchInput"
+                >
+                <button class="search-btn" onclick="searchMusic()">🔍</button>
+            </div>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>🎵 Recherche en cours...</p>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="current-playing" id="currentPlaying">
+            <div class="now-playing">♪ En cours de lecture</div>
+            <div id="playingInfo"></div>
+            <audio id="audioPlayer" class="preview-audio" controls style="display: none;"></audio>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
